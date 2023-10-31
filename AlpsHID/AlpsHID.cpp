@@ -492,9 +492,9 @@ void AlpsHIDEventDriver::u1_raw_event(AbsoluteTime timestamp, IOMemoryDescriptor
 #if DEBUG
         IOLog("%s::%s Getting poked dx:%i, dy:%i \n", getName(), name, reportData.x, reportData.y);
 #endif
-        spInputMessage.dx = reportData.x/4;
-        spInputMessage.dy = reportData.y/4;
-        spInputMessage.buttons = reportData.buttons & 0x07;
+        spInputMessage.dx = 0;
+        spInputMessage.dy = 0;
+        spInputMessage.buttons = 0;
         spInputMessage.timestamp=timestamp;
         super::messageClient(kIOMessageVoodooTrackpointRelativePointer,voodooInputInstance,&spInputMessage, sizeof(RelativePointerEvent));
         return;
