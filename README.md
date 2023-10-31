@@ -1,7 +1,6 @@
-# AlpsHID
+# AlpsHID-But-No-Nub
 
-This is a satellite kext which uses VoodooI2C's multitouch engine to bring native multitouch to the Alps touchpad using the HID protocol.
-Trackpoint(StickPointer) is supported aswell, including the buttons. 
+Basically AlpsHID but no Nub/Trackpoint support.
 
 # Installation Considerations
 
@@ -129,7 +128,7 @@ List of devices that match the ProductIDs above, found using http://linux-hardwa
 
 To build --
 ```
-git clone https://github.com/blankmac/AlpsHID.git
+git clone https://github.com/Hoangdus/AlpsHID-But-No-Nub.git
 cd AlpsHID
 git submodule init && git submodule update
 ```
@@ -139,7 +138,7 @@ Then add the MacKernel SDK.
 git clone https://github.com/acidanthera/MacKernelSDK.git
 ```
 
-Open the main project in Xcode and build away.  :)
+Open the main project in Xcode and finger cross when hitting the build button.  :)
 
 # Credits
 This code is derived and adapted from VoodooI2CHID's Multitouch Event Driver and Precision
